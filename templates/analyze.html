@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Friendship Analysis</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/analyze.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="bg one"></div>
+    <div class="bg two"></div>
+    
+
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="container">
+
+        <!-- LEFT -->
+
+        <div class="question-section">
+
+            <div class="top-bar">
+
+                <div class="progress">
+
+                    <div class="progress-fill" id="progressFill"></div>
+
+                </div>
+
+                <span id="questionCount">
+                    Question 1 / 16
+                </span>
+
+            </div>
+
+            <div class="question-card">
+
+                <h2 id="question">
+                    Does your friend help you?
+                </h2>
+
+                <div class="options">
+
+                    <button onclick="nextQuestion('yes')">
+                        Yes 😊
+                    </button>
+
+                    <button onclick="nextQuestion('sometimes')">
+                        Sometimes 🤔
+                    </button>
+
+                    <button onclick="nextQuestion('no')">
+                        No 😢
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="robot-section">
+
+            <div class="robot-container">
+
+                <!-- CHAT -->
+
+                <div class="robot-chat" id="robotChat">
+
+                    Hmmm... Tell me more 💭
+
+                </div>
+
+                <!-- ROBOT -->
+
+                <div class="robot"  id="robot">
+
+                    <!-- HEART -->
+
+                    <div class="heart"></div>
+
+                    <!-- ANTENNA -->
+
+                    <div class="robot-antenna"></div>
+
+                    <!-- HEAD -->
+
+                    <div class="robot-head">
+
+                        <!-- EARS -->
+
+                        <div class="ear left-ear"></div>
+                        <div class="ear right-ear"></div>
+
+                        <!-- EYES -->
+
+                        <div class="robot-eyes">
+
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+
+                        </div>
+
+                        <!-- MOUTH -->
+
+                        <div class="robot-smile"
+                        id="robotMouth"></div>
+
+                        <!-- BLUSH -->
+
+                        <div class="robot-blush left"></div>
+                        <div class="robot-blush right"></div>
+
+                    </div>
+
+                    <!-- BODY -->
+
+                    <div class="robot-body">
+
+                        <div class="belly">
+
+                            <div class="light"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ARMS -->
+
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+
+                    <!-- LEGS -->
+
+                    <div class="legs">
+
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="{{ url_for('static',
+filename='js/analyze.js') }}"></script>
+
+</body>
+</html>
